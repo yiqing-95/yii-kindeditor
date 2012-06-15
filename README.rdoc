@@ -1,0 +1,43 @@
+This is a extension for use KindEditor as a text editor.
+The KindEditor detail is here [http://www.kindsoft.net]
+This version extension is not support full English, so please wait for the next version.
+== Requirements
+
+Requirements of using this extension (e.g. Yii 1.1 or above)...
+
+== Version
+v0.1
+
+== Usage
+
+=== How to use
+Before code
+
+<?php echo $form->labelEx($model,'content'); ?>
+<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+
+
+After code
+
+<?php $this->widget('ext.kindeditor.KindEditor',
+					array(
+						'model'=>$model,
+						'attribute'=>'content',
+						)
+					); ?>
+<?php echo $form->labelEx($model,'content'); ?>
+<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+
+
+== Resources
+
+Created By <a href="http://about.me/aidai524">Joe Chu</a>
+
+Github page["https://github.com/aidai524/yii-kindeditor"]
+Try out a demo["http://www.kindsoft.net/demo.php"]
+Home page["http://www.kindsoft.net]
+
+Todos:  
+
+Custom langauge.
+Support multiple editor use in one form.
