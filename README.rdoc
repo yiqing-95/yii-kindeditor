@@ -12,7 +12,7 @@ v0.1
 
 === How to use
 
-Before code:
+Before code(for existing textArea ):
 
  # <?php echo $form->labelEx($model,'content'); ?>
  # <?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
@@ -20,14 +20,18 @@ Before code:
 
 After code:
 
- # <?php $this->widget('ext.kindeditor.KindEditor',
-					array(
-						'model'=>$model,
-						'attribute'=>'content',
+ # <?php $this->widget('ext.kindeditor.KindEditor',	array(
+						'textAreaId'=>= CHtml::activeId($this->model, 'content');
 						)
 					); ?>
+use together with the CActiveForm or its subClass
+
  # <?php echo $form->labelEx($model,'content'); ?>
- # <?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+ # <?php $this->widget('ext.kindeditor.KindEditor',  array(
+  ¡®model¡¯=>$model, ¡®attribute¡¯=>¡®content¡¯,
+  'htmlOptions'=>array('rows'=>6, 'cols'=>50)
+   )
+    ); ?>
 
 
 == Resources
