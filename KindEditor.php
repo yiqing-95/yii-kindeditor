@@ -92,7 +92,7 @@ class KindEditor extends CInputWidget
                 // list($name, $id) = $this->resolveNameID();
                 $this->textAreaId = CHtml::activeId($this->model, $this->attribute);
 
-            } elseif (!isset($this->textAreaId)) {
+            } else {
                 echo CHtml::textArea($this->name, $this->value, $this->htmlOptions);
                 $this->textAreaId = CHtml::getIdByName($this->name);
             }
