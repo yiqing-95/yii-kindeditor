@@ -1,6 +1,9 @@
 <?php
 
 class KindEditor extends CInputWidget{
+    /**
+     * @var string
+     */
 	private $language = 'zh_CN';
 
 	public function getAssetsPath()
