@@ -21,7 +21,7 @@ Before code(for existing textArea ):
 After code:
 
  # <?php $this->widget('ext.kindeditor.KindEditor',	array(
-						'textAreaId'=>= CHtml::activeId($this->model, 'content');
+						'textAreaId'=>= CHtml::activeId($model, 'content');
 						)
 					); ?>
 use together with the CActiveForm or its subClass
