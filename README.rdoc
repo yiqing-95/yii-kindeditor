@@ -12,13 +12,13 @@ v0.1
 
 === How to use
 
-Before code:
+# Before code:
 
 <?php echo $form->labelEx($model,'content'); ?>
 <?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
 
 
-After code:
+# After code:
 
 <?php $this->widget('ext.kindeditor.KindEditor',
 					array(
@@ -32,16 +32,12 @@ After code:
 
 == Resources
 
-Created By {Joe Chu}[http://about.me/aidai524].
-
-{Github page}["https://github.com/aidai524/yii-kindeditor"].
-
-{Try out a demo}["http://www.kindsoft.net/demo.php"].
-
-{Home page}["http://www.kindsoft.net].
+Created By {Joe Chu}[http://about.me/aidai524]
+{Github page}["https://github.com/aidai524/yii-kindeditor"]
+{Try out a demo}["http://www.kindsoft.net/demo.php"]
+{Home page}["http://www.kindsoft.net]
 
 Todos:  
-
 Custom langauge.
 
 Support multiple editor use in one form.
