@@ -28,7 +28,7 @@ use together with the CActiveForm or its subClass
 
  # <?php echo $form->labelEx($model,'content'); ?>
  # <?php $this->widget('ext.kindeditor.KindEditor',  array(
-  ¡®model¡¯=>$model, ¡®attribute¡¯=>¡®content¡¯,
+  'model'=>$model, 'attribute'=>'content',
   'htmlOptions'=>array('rows'=>6, 'cols'=>50)
    )
     ); ?>
