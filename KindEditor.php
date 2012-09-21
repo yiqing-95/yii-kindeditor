@@ -67,7 +67,8 @@ class KindEditor extends CInputWidget
         $assets = self::getAssetsPath();
 
         $cs = Yii::app()->getClientScript();
-        $cs->registerCssFile($assets . '/themes/default/default.css')
+        $cs->registerCoreScript('jquery')
+            ->registerCssFile($assets . '/themes/default/default.css')
             ->registerCssFile($assets . '/plugins/code/prettify.css')
             ->registerScriptFile($assets . '/kindeditor.js', CClientScript::POS_HEAD)
             ->registerScriptFile($assets . '/lang/zh_CN.js', CClientScript::POS_HEAD)
